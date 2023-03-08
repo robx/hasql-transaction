@@ -53,3 +53,6 @@ statement params statement =
 condemn :: Transaction ()
 condemn =
   Transaction $ put False
+
+inTransaction :: B.Session a -> Transaction a
+inTransaction = Transaction . lift

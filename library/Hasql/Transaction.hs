@@ -6,6 +6,7 @@ module Hasql.Transaction
     condemn,
     sql,
     statement,
+    inTransaction,
   )
 where
 
